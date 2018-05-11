@@ -5,6 +5,7 @@
 *   [Details](#details)
 *   [Shell alternative](#shell-alternative)
 *   [Requirements](#requirements)
+*   [Contact](#contact)
 *   [Useless facts](#useless-facts)
 
 ----
@@ -13,7 +14,7 @@
 
 The *TypeFX* module allows printing a string with a user-defined delay after each character.
 
-[Top](#)
+[Top](#typefx)
 
 ## Details
 
@@ -22,7 +23,7 @@ There are two types of delays:
 *   **static**<br>Prints the output "typically machine-like", character by character at the same speed.
 *   **dynamic**<br>Prints the output "typewriter-like" as if a person was typing (available in the *Python* module, only).
 
-[Top](#)
+[Top](#typefx)
 
 ## Shell alternative
 
@@ -78,7 +79,7 @@ typefx() {
 typefx 0.01 "This is a simple text printed on the shell."
 ```
 
-[Top](#)
+[Top](#typefx)
 
 ## Requirements
 
@@ -89,7 +90,15 @@ Depending on which version of the framework you are using:
 *   *Python* 2.x (version 2.7 or higher is recommended, may also work with earlier versions)
 *   *Python* 3.x (version 3.2 or higher is recommended, may also work with earlier versions)
 
-[Top](#)
+[Top](#typefx)
+
+## Contact
+
+Any suggestions, questions, bugs to report or feedback to give?
+
+You can contact me by sending an email to <dev@urbanware.org>.
+
+[Top](#typefx)
 
 ## Useless facts
 
@@ -98,4 +107,4 @@ Depending on which version of the framework you are using:
 *   Before uploading, the project has neither been changed nor even touched for almost three years.
 *   The module for *Python* 3 was created by converting the *Python* 2 module using the *2to3* tool. However, both files are identical except for the shebang.
 
-[Top](#)
+[Top](#typefx)
