@@ -7,6 +7,7 @@
 # Distributed under the MIT License (https://opensource.org/licenses/MIT)
 #
 # GitHub: https://github.com/urbanware-org/typefx
+# GitLab: https://gitlab.com/urbanware-org/typefx
 # ============================================================================
 
 __version__ = "1.1.2"
