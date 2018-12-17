@@ -10,6 +10,8 @@
 # GitLab: https://gitlab.com/urbanware-org/typefx
 # ============================================================================
 
+version="1.0.0"
+
 typefx() {
     delay=$1
     string=$2
