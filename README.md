@@ -35,7 +35,7 @@ typefx.static("This is a simple text printed on the shell.", 10)
 
 ### Dynamic
 
-Prints the output "typewriter-like" as if a person was typing (available in the *Python* module, only).
+Prints the output "typewriter-like" as if a person was typing. This method is available in the *Python* modules, only.
 
 **Usage example:**
 
