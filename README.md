@@ -18,10 +18,29 @@ The *TypeFX* module allows printing a string with a user-defined delay after eac
 
 ## Details
 
-There are two types of delays:
+There are two types of delays.
 
-*   **static**<br>Prints the output "typically machine-like", character by character at the same speed.
-*   **dynamic**<br>Prints the output "typewriter-like" as if a person was typing (available in the *Python* module, only).
+### Static
+
+Prints the output "typically machine-like", character by character at the same speed.
+
+**Usage example:**
+
+```python
+import typefx
+typefx.static("This is a simple text printed on the shell.", 10)
+```
+
+### Dynamic
+
+Prints the output "typewriter-like" as if a person was typing (available in the *Python* module, only).
+
+**Usage example:**
+
+```python
+import typefx
+typefx.dynamic("This is a simple text printed on the shell.", 10)
+```
 
 [Top](#typefx)
 
