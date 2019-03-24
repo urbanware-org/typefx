@@ -17,7 +17,7 @@ import sys
 import time
 
 
-def dynamic(string, delay_min=1, delay_max=100, use_utf8=True):
+def dynamic(string, delay_min=1, delay_max=100):
     """
         Print the input text "typewriter like" with a dynamic delay (in
         milliseconds).
@@ -30,9 +30,6 @@ def dynamic(string, delay_min=1, delay_max=100, use_utf8=True):
     if delay_max <= 0:
         raise Exception("The maximum delay must be greater than zero.")
 
-    if use_utf8:
-        string = string.encode("utf8", "ignore")
-
     delay_min = int(delay_min)
     delay_max = int(delay_max)
     for char in string:
@@ -43,7 +40,7 @@ def dynamic(string, delay_min=1, delay_max=100, use_utf8=True):
         time.sleep(wait)
 
 
-def static(string, delay=10, use_utf8=True):
+def static(string, delay=10):
     """
         Print the input text "machine like" with a static delay (in
         milliseconds).
@@ -51,14 +48,14 @@ def static(string, delay=10, use_utf8=True):
     if delay <= 0:
         raise Exception("The delay must be greater than zero.")
 
-    if use_utf8:
-        string = string.encode("utf8", "ignore")
-
     delay = int(delay)
     wait = float(delay) / 1000
     for char in string:
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(wait)
+
+static("This is a test")
+dynamic("This is a test")
 
 # EOF
