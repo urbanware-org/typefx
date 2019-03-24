@@ -10,7 +10,7 @@
 # GitLab: https://gitlab.com/urbanware-org/typefx
 # ============================================================================
 
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 import random
 import sys
@@ -54,8 +54,5 @@ def static(string, delay=10):
         sys.stdout.write(char)
         sys.stdout.flush()
         time.sleep(wait)
-
-static("This is a test")
-dynamic("This is a test")
 
 # EOF
