@@ -105,6 +105,5 @@ You can contact me by sending an email to <dev@urbanware.org>.
 *   The project name is an abbreviation for *Type Effects*.
 *   The first version uploaded on *GitHub* was *TypeFX* 1.1.1 built on March 31<sup>st</sup>, 2015.
 *   Before uploading, the project has neither been changed nor even touched for almost three years.
-*   The module for *Python* 3 was created by converting the *Python* 2 module using the *2to3* tool. However, both files are identical except for the shebang.
 
 [Top](#typefx)
