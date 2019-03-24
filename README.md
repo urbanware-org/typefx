@@ -26,6 +26,8 @@ Prints the output "typically machine-like", character by character at the same s
 
 **Usage example:**
 
+Notice that the delay must be given in milliseconds.
+
 ```python
 import typefx
 typefx.static("This is a simple text printed on the shell.", 10)
@@ -37,9 +39,11 @@ Prints the output "typewriter-like" as if a person was typing (available in the 
 
 **Usage example:**
 
+Notice that the range of the delays must be given in milliseconds.
+
 ```python
 import typefx
-typefx.dynamic("This is a simple text printed on the shell.", 10)
+typefx.dynamic("This is a simple text printed on the shell.", 1, 100)
 ```
 
 [Top](#typefx)
