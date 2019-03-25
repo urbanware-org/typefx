@@ -10,7 +10,7 @@
 # GitLab: https://gitlab.com/urbanware-org/typefx
 # ============================================================================
 
-__version__ = "1.1.3"
+__version__ = "1.1.4"
 
 import random
 import sys
