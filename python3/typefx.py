@@ -22,6 +22,19 @@ def dynamic(string, delay_min=1, delay_max=100):
         Print the input text "typewriter like" with a dynamic delay (in
         milliseconds).
     """
+    if string == "":
+        return
+
+    try:
+        delay_min = int(delay_min)
+    except:
+        raise Exception("The minimum delay must be an integer.")
+
+    try:
+        delay_max = int(delay_max)
+    except:
+        raise Exception("The maximum delay must be an integer.")
+
     if delay_max <= delay_min:
         raise Exception("The maximum delay must be greater than the "
                         "minimum delay.")
@@ -30,8 +43,6 @@ def dynamic(string, delay_min=1, delay_max=100):
     if delay_max <= 0:
         raise Exception("The maximum delay must be greater than zero.")
 
-    delay_min = int(delay_min)
-    delay_max = int(delay_max)
     for char in string:
         random.seed()
         wait = float(random.randrange(delay_min, delay_max)) / 1000
@@ -45,6 +56,15 @@ def static(string, delay=10):
         Print the input text "machine like" with a static delay (in
         milliseconds).
     """
+    if string == "":
+        return
+
+    try:
+        delay = int(delay)
+        wait = float(delay) / 1000
+    except:
+        raise Exception("The delay must be an integer.")
+
     if delay <= 0:
         raise Exception("The delay must be greater than zero.")
 
