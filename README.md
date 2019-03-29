@@ -3,7 +3,7 @@
 **Table of contents**
 *   [Definition](#definition)
 *   [Details](#details)
-*   [Shell alternative](#shell-alternative)
+*   [Shell alternatives](#shell-alternative)
 *   [Requirements](#requirements)
 *   [Contact](#contact)
 *   [Useless facts](#useless-facts)
@@ -48,7 +48,7 @@ typefx.dynamic("This is a simple text printed on the shell.", 1, 100)
 
 [Top](#typefx)
 
-## Shell alternative
+## Shell alternatives
 
 In case the "machine like" type effect should be used in a shell script, it would be quite inconvenient to use this *Python* module every time when printing a text on the shell.
 
@@ -104,6 +104,24 @@ typefx() {
 }
 
 typefx 0.01 "This is a simple text printed on the shell."
+```
+
+### *PowerShell*
+
+Here is the *PowerShell* variant of the function. As in the *Python* scripts, the delay must be given in milliseconds.
+
+```powershell
+Function Type-Static {
+    [Int32]$Delay = $args[0]
+    [String]$String = $args[1]
+
+    For ($i = 0; $i -lt $String.Length; $i++) {
+        Write-Host $String[$i] -NoNewLine
+        Start-Sleep -Milliseconds $Delay
+    }
+}
+
+Type-Static 10 "This is a simple text printed on the shell."
 ```
 
 [Top](#typefx)
