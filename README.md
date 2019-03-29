@@ -3,7 +3,7 @@
 **Table of contents**
 *   [Definition](#definition)
 *   [Details](#details)
-*   [Shell alternatives](#shell-alternative)
+*   [Shell alternatives](#shell-alternatives)
 *   [Requirements](#requirements)
 *   [Contact](#contact)
 *   [Useless facts](#useless-facts)
