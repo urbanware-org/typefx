@@ -14,6 +14,8 @@
 
 The *TypeFX* module allows printing a string with a user-defined delay after each character.
 
+:arrows_clockwise: If you are also interested in a character flipping effect text printer module, you can find it [here](https://github.com/urbanware-org/flipfx).
+
 [Top](#typefx)
 
 ## Details
