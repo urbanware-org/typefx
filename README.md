@@ -34,11 +34,11 @@ Prints the output "typewriter-like" as if a person was typing. This method is av
 
 #### Code
 
-Notice that the range of the delays must be given in milliseconds.
+Notice that the delays must be given in milliseconds.
 
 ```python
 import typefx
-typefx.static("This is the static \"typically machine-like\" output effect.", 20, 300)
+typefx.static("This is the static \"typically machine-like\" output effect.", 10)
 typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300)
 ```
 
