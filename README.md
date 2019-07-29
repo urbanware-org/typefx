@@ -20,33 +20,31 @@ The *TypeFX* module allows printing a string with a user-defined delay after eac
 
 ## Details
 
-There are two types of delays.
+With the *Python* modules, there are two types of delays.
 
 ### Static
 
 Prints the output "typically machine-like", character by character at the same speed.
 
-**Usage example:**
-
-Notice that the delay must be given in milliseconds.
-
-```python
-import typefx
-typefx.static("This is a simple text printed on the shell.", 10)
-```
-
 ### Dynamic
 
 Prints the output "typewriter-like" as if a person was typing. This method is available in the *Python* modules, only.
 
-**Usage example:**
+### **Usage examples**
+
+#### Code
 
 Notice that the range of the delays must be given in milliseconds.
 
 ```python
 import typefx
-typefx.dynamic("This is a simple text printed on the shell.", 1, 100)
+typefx.static("This is the static \"typically machine-like\" output effect.", 20, 300)
+typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300)
 ```
+
+#### Output
+
+<img src="https://raw.githubusercontent.com/urbanware-org/typefx/master/gif/typefx.gif" alt="TypeFX sample output" width="60%">
 
 [Top](#typefx)
 
