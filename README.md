@@ -108,7 +108,7 @@ typefx 0.01 "This is a simple text printed on the shell."
 
 ### *PowerShell*
 
-Here is the *PowerShell* variant for both effects. As in the *Python* scripts, the delay must be given in milliseconds, but the delay must be given before the string.
+Here is the *PowerShell* code for both effects. As in the *Python* scripts, the delay must be given in milliseconds, but the delay must be given before the string.
 
 ```powershell
 Function Type-Dynamic {
