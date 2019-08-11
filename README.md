@@ -50,7 +50,7 @@ typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300
 
 ## Shell alternatives
 
-In case the "machine like" type effect should be used in a shell script, it would be quite inconvenient to use this *Python* module every time when printing a text on the shell.
+In case the effects should be used in a shell script, it would be quite inconvenient to use this *Python* module every time when printing a text on the shell.
 
 However, such an effect can also be produced using shell commands. Below you can find a code snippet containing a shell function for that purpose.
 
@@ -58,7 +58,7 @@ However, such an effect can also be produced using shell commands. Below you can
 
 The following code was developed on the *Bash* shell, which is the default shell on many *Unix*-like systems (or at least *Linux* distributions). It may also work with other shells, however, there is no guarantee for that.
 
-Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds. Furthermore, the delay must be given before the string.
+Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds. Furthermore, the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
 
 ```bash
 #!/bin/bash
@@ -83,7 +83,7 @@ While waiting, I wanted to use the time for something "useful", so I wrote a *Ty
 
 However, even though this runs on *Android* (at least on version 6 and 7), it does not run on a *Linux* system, because of `tr` is missing an argument.
 
-Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds. Furthermore, the delay must be given before the string.
+Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds. Furthermore, the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
 
 ```sh
 #!/bin/sh
@@ -108,7 +108,7 @@ typefx 0.01 "This is a simple text printed on the shell."
 
 ### *PowerShell*
 
-Here is the *PowerShell* variant of the function. As in the *Python* scripts, the delay must be given in milliseconds, but the delay must be given before the string.
+Here is the *PowerShell* variant for both effects. As in the *Python* scripts, the delay must be given in milliseconds, but the delay must be given before the string.
 
 ```powershell
 Function Type-Dynamic {
