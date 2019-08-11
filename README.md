@@ -111,6 +111,19 @@ typefx 0.01 "This is a simple text printed on the shell."
 Here is the *PowerShell* variant of the function. As in the *Python* scripts, the delay must be given in milliseconds, but the delay must be given before the string.
 
 ```powershell
+Function Type-Dynamic {
+    [Int32]$DelayMin = $args[0]
+    [Int32]$DelayMax = $args[1]
+    [String]$String = $args[2]
+
+    For ($i = 0; $i -lt $String.Length; $i++) {
+        Write-Host $String[$i] -NoNewLine
+        $Delay = Get-Random -Minimum $DelayMin -Maximum $DelayMax
+        Start-Sleep -Milliseconds $Delay
+    }
+    Write-Host
+}
+
 Function Type-Static {
     [Int32]$Delay = $args[0]
     [String]$String = $args[1]
@@ -119,9 +132,11 @@ Function Type-Static {
         Write-Host $String[$i] -NoNewLine
         Start-Sleep -Milliseconds $Delay
     }
+    Write-Host
 }
 
-Type-Static 10 "This is a simple text printed on the shell."
+Type-Static 10 'This is the static "typically machine-like" output effect.'
+Type-Dynamic 20 300 'This is the dynamic "typewriter-like" output effect.'
 ```
 
 [Top](#typefx)
