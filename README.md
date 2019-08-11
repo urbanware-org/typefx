@@ -58,7 +58,7 @@ However, such effects can also be produced using shell commands. Below you can f
 
 The following code was developed on the *Bash* shell, which is the default shell on many *Unix*-like systems (or at least *Linux* distributions). It may also work with other shells, however, there is no guarantee for that.
 
-Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds. Furthermore, the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
+Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds and the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
 
 ```bash
 #!/bin/bash
@@ -83,7 +83,7 @@ While waiting, I wanted to use the time for something "useful", so I wrote a *Ty
 
 However, even though this runs on *Android* (at least on version 6 and 7), it does not run on a *Linux* system, because of `tr` is missing an argument.
 
-Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds. Furthermore, the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
+Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds and the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
 
 ```sh
 #!/bin/sh
