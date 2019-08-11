@@ -143,7 +143,7 @@ Type-Dynamic 20 300 'This is the dynamic "typewriter-like" output effect.'
 
 ## Requirements
 
-In order to use the *TypeFX* *Python* scripts, the framework must be installed on the system.
+In order to use the *TypeFX* scripts in *Python*, the framework must be installed on the system.
 
 Depending on which version of the framework you are using:
 
