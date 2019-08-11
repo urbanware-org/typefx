@@ -128,7 +128,7 @@ Type-Static 10 "This is a simple text printed on the shell."
 
 ## Requirements
 
-In order to use *TypeFX*, the *Python* framework must be installed on the system.
+In order to use the *TypeFX* *Python* scripts, the framework must be installed on the system.
 
 Depending on which version of the framework you are using:
 
