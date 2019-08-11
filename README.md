@@ -52,7 +52,7 @@ typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300
 
 In case the effects should be used in a shell script, it would be quite inconvenient to use this *Python* module every time when printing a text on the shell.
 
-However, such an effect can also be produced using shell commands. Below you can find a code snippet containing a shell function for that purpose.
+However, such effects can also be produced using shell commands. Below you can find some code snippets for various shells.
 
 ### *Bash*
 
