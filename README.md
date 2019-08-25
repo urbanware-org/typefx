@@ -28,7 +28,7 @@ Prints the output "typically machine-like", character by character at the same s
 
 ### Dynamic
 
-Prints the output "typewriter-like" as if a person was typing. This method is available in the *Python* modules, only.
+Prints the output "typewriter-like" as if a person was typing. This method is available in the *Python* modules and the *PowerShell* code, only.
 
 ### **Usage examples**
 
