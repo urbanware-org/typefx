@@ -54,6 +54,12 @@ In case the effects should be used in a shell script, it would be quite inconven
 
 However, such effects can also be produced using shell commands. Below you can find some code snippets for various shells.
 
+Below you can find code for the following:
+
+*   [*Bash*](#bash)
+*   [*Android*](#terminal-emulator-on-android) terminal emulator
+*   [*PowerShell*](#powershell)
+
 ### *Bash*
 
 The following code was developed on the *Bash* shell, which is the default shell on many *Unix*-like systems (or at least *Linux* distributions). It may also work with other shells, however, there is no guarantee for that.
