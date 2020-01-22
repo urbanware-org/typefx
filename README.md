@@ -67,7 +67,7 @@ The following code was developed on the *Bash* shell, which is the default shell
 Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds and the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
 
 ```bash
-#!/bin/bash
+#!/usr/bin/env bash
 
 typefx() {
     delay=$1
