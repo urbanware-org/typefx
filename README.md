@@ -117,11 +117,7 @@ typefx 0.01 "This is a simple text printed on the shell."
 Here is the *PowerShell* code for both effects. As in the *Python* scripts, the delay must be given in milliseconds, but the delays must be given before the string.
 
 ```powershell
-Function Type-Dynamic {
-    [Int32]$DelayMin = $args[0]
-    [Int32]$DelayMax = $args[1]
-    [String]$String = $args[2]
-
+Function Type-Dynamic([Int32]$DelayMin, [Int32]$DelayMax, [String]$String) {
     For ($i = 0; $i -lt $String.Length; $i++) {
         Write-Host $String[$i] -NoNewLine
         $Delay = Get-Random -Minimum $DelayMin -Maximum $DelayMax
@@ -130,10 +126,7 @@ Function Type-Dynamic {
     Write-Host
 }
 
-Function Type-Static {
-    [Int32]$Delay = $args[0]
-    [String]$String = $args[1]
-
+Function Type-Static([Int32]$Delay, [String]$String) {
     For ($i = 0; $i -lt $String.Length; $i++) {
         Write-Host $String[$i] -NoNewLine
         Start-Sleep -Milliseconds $Delay

@@ -8,13 +8,9 @@
 # GitLab: https://gitlab.com/urbanware-org/typefx
 # ============================================================================
 
-$TypeFxVersion = "1.1.0"
+$TypeFxVersion = "1.1.1"
 
-Function Type-Dynamic {
-    [Int32]$DelayMin = $args[0]
-    [Int32]$DelayMax = $args[1]
-    [String]$String = $args[2]
-
+Function Type-Dynamic([Int32]$DelayMin, [Int32]$DelayMax, [String]$String) {
     For ($i = 0; $i -lt $String.Length; $i++) {
         Write-Host $String[$i] -NoNewLine
         $Delay = Get-Random -Minimum $DelayMin -Maximum $DelayMax
@@ -23,10 +19,7 @@ Function Type-Dynamic {
     Write-Host
 }
 
-Function Type-Static {
-    [Int32]$Delay = $args[0]
-    [String]$String = $args[1]
-
+Function Type-Static([Int32]$Delay, [String]$String) {
     For ($i = 0; $i -lt $String.Length; $i++) {
         Write-Host $String[$i] -NoNewLine
         Start-Sleep -Milliseconds $Delay
