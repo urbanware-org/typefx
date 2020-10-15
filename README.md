@@ -87,7 +87,11 @@ typefx 0.01 "This is a simple text printed on the shell."
 
 While waiting, I wanted to use the time for something "useful", so I wrote a *TypeFX* script on the terminal emulator of my smartphone.
 
-However, even though this runs on *Android* (at least on version 6 and 7), it does not run on a *Linux* system, because of `tr` is missing an argument.
+#### *Bash* shell
+
+When using a such a terminal emulator, you can run the *[Bash](#bash)* code above. 
+
+#### Other shells
 
 Notice that unlike the *Python* scripts, the delay range must be given in seconds instead of milliseconds and the delay must be given before the string. Furthermore, the following script provides the static "typically machine-like" output effect, only.
 
