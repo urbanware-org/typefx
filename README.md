@@ -72,7 +72,7 @@ typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300
 
 produces this output:
 
-<img src="https://raw.githubusercontent.com/urbanware-org/typefx/master/gif/typefx.gif" alt="TypeFX sample output" width="68%">
+<img src="https://raw.githubusercontent.com/urbanware-org/typefx/master/gif/typefx.gif" alt="TypeFX sample output">
 
 [Top](#typefx)
 
