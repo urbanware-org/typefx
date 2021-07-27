@@ -14,7 +14,9 @@
 
 The *TypeFX* module allows printing a string with a user-defined delay after each character.
 
-:arrows_clockwise: If you are also interested in a character flipping effect text printer module, you can find it [here](https://github.com/urbanware-org/flipfx).
+:arrows_clockwise: If you are interested in a character flipping effect text printer module, you can find it [here](https://github.com/urbanware-org/flipfx).
+
+:left_right_arrow: There also is a left-to-right line bouncing effect module [here](https://github.com/urbanware-org/bouncefx).
 
 [Top](#typefx)
 
@@ -30,11 +32,37 @@ Prints the output "typically machine-like", character by character at the same s
 
 Prints the output "typewriter-like" as if a person was typing. This method is available in the *Python* modules and the *PowerShell* code, only.
 
-### **Usage examples**
+### **Usage**
 
-#### Code
+First of all, the module must be imported.
+
+```python
+import typefx
+```
+
+#### Methods
 
 Notice that the delays must be given in milliseconds.
+
+##### Static
+
+The `static` method requires only two arguments, the string that should be printed and the delay between printing each character:
+
+```python
+typefx.static(string, delay=10)
+```
+
+##### Dynamic
+
+The `dynamic` method requires three arguments, the string that should be printed, the minimum delay as well as the maximum delay between printing each character.
+
+```python
+typefx.dynamic(string, delay_min=1, delay_max=100)
+```
+
+#### Examples
+
+The following code
 
 ```python
 import typefx
@@ -42,7 +70,7 @@ typefx.static("This is the static \"typically machine-like\" output effect.", 10
 typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300)
 ```
 
-#### Output
+produces this output:
 
 <img src="https://raw.githubusercontent.com/urbanware-org/typefx/master/gif/typefx.gif" alt="TypeFX sample output" width="64%">
 
@@ -52,9 +80,7 @@ typefx.dynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300
 
 In case the effects should be used in a shell script, it would be quite inconvenient to use this *Python* module every time when printing a text on the shell.
 
-However, such effects can also be produced using shell commands. Below you can find some code snippets for various shells.
-
-Below you can find code for the following:
+However, such effects can also be produced using shell commands. Below you can find some code snippets for various shells:
 
 *   [*Bash*](#bash)
 *   [*Android*](#terminal-emulator-on-android) terminal emulator
@@ -89,7 +115,7 @@ While waiting, I wanted to use the time for something "useful", so I wrote a *Ty
 
 #### *Bash* shell
 
-When using a such a terminal emulator, you can run the *[Bash](#bash)* code above. 
+When using a such a terminal emulator, you can run the *[Bash](#bash)* code above.
 
 #### Other shells
 
