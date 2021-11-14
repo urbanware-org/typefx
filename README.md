@@ -115,7 +115,7 @@ While waiting, I wanted to use the time for something "useful", so I wrote a *Ty
 
 #### *Bash* shell
 
-When using a such a terminal emulator, you can run the *[Bash](#bash)* code above.
+When using a terminal emulator such as *[Termux](https://github.com/termux/termux-app)*, you can run the *[Bash](#bash)* code above.
 
 #### Other shells
 
