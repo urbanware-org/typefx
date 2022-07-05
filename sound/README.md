@@ -13,7 +13,7 @@ This directory contains an **experimental** version of the *TypeFX* module, whic
 
 I haven't done much with sound modules in *Python* (or at all) before, so this was a first attempt. Since then, I haven't had the time or leisure to play around with these sound modules either. As mentioned above, this was an experiment, so it is uncertain whether I will enhance or modify it at all.
 
-[Top](#)
+[Top](#typefx-with-keystroke-sounds)
 
 ## Details
 
@@ -35,7 +35,7 @@ The files `key_static.wav` and `key_space.wav` are required.
 
 For the keystrokes at least `key_stroke1.wav` must exist, `key_stroke2.wav` and `key_stroke3.wav` are optional. However, it is recommended to provide all of them. Further keystroke sounds e.g. `key_stroke4.wav` are not supported, so there is a maximum of three sounds.
 
-[Top](#)
+[Top](#typefx-with-keystroke-sounds)
 
 ## Usage
 
@@ -85,4 +85,4 @@ typefx.static(string, delay=10, sound_module="simpleaudio")
 typefx.dynamic(string, delay_min=1, delay_max=100, sound_module="simpleaudio")
 ```
 
-[Top](#)
+[Top](#typefx-with-keystroke-sounds)
