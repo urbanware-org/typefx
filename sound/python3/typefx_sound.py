@@ -18,7 +18,7 @@ __version__ = "1.1.4"   # with keystroke sound effects
 # module, which, unlike the original, additionally plays keystroke sounds
 # while typing. For further information and usage examples see:
 #
-#     https://github.com/urbanware-org/typefx/sound/README.md
+#     https://github.com/urbanware-org/typefx/blob/main/sound/README.md
 #
 
 import os
