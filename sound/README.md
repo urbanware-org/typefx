@@ -25,7 +25,7 @@ Depending on the sound module you are using, the script may crash or does not pl
 
 The script path contains the sub-directory `sounds`. Inside this directory there are five files:
 
-*   `key_static.wav` (used for all characters dor static "machine like" mode)
+*   `key_static.wav` (used for all characters for static "machine like" mode)
 *   `key_space.wav` (used for spaces for dynamic "typewriter like" mode, only)
 *   `key_stroke1.wav` (one of the random sounds used for dynamic "typewriter like" mode, only)
 *   `key_stroke2.wav` (one of the random sounds used for dynamic "typewriter like" mode, only)
