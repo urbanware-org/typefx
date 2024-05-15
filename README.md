@@ -166,6 +166,15 @@ Type-Static 10 'This is the static "typically machine-like" output effect.'
 Type-Dynamic 20 300 'This is the dynamic "typewriter-like" output effect.'
 ```
 
+### *C#*
+
+There also are _C#_ methods available.
+
+```csharp
+TypeFxStatic("This is the static \"typically machine-like\" output effect.", 10)
+TypeFxDynamic("This is the dynamic \"typewriter-like\" output effect.", 20, 300)
+```
+
 [Top](#typefx)
 
 ## Requirements
