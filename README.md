@@ -74,7 +74,7 @@ produces this output:
 
 [Top](#typefx)
 
-## Shell alternatives
+## Alternative languages
 
 In case the effects should be used in a shell script, it would be quite inconvenient to use this *Python* module every time when printing a text on the shell.
 
